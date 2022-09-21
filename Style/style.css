@@ -1,11 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 .lbox{
     visibility: hidden;
     opacity: 0;
+    
+    
 }
 
 ul{
@@ -19,6 +22,7 @@ ul{
     padding: 10px;
 }
 
+
 .lbox:target{
     opacity: 1;
     visibility: visible;
@@ -31,8 +35,10 @@ ul{
     position: fixed;
 }
 .box_img{
-    width: 500px;
-    margin: 150px auto;
+    width: 700px;
+    height: 500px;
+    margin: 70px auto;
+    
 }
 
 .btn{
@@ -66,4 +72,11 @@ ul{
 .lbox:target .box_img img{
     opacity: 1;
     transition: opacity .4s linear;
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    
+    
+    
 }
+
