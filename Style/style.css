@@ -4,31 +4,65 @@
     
 }
 
+header{
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+.banner{
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+    
+
+}
+main{
+    background-color: lightblue;
+    z-index: 2;
+}
+
 .lbox{
-    visibility: hidden;
+    display: none;
     opacity: 0;
     
     
 }
 
-ul{
+figure{
     width: 880px;
     list-style: none;
     display: flex;
-    margin: 100px auto;
+    margin: 10px auto;
 }
 .min{
-    width: 200px;
-    padding: 10px;
+    z-index: 4;
+    width: 100%;
+    padding: 15px;
+    overflow: hidden;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 200px;
+    max-width: 300px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .4);
+
+
+
 }
 
+
 .min:hover{
-    scale: 105%;
+    transform: scale(1.05) rotate(5deg);
+    
+    
+
 }
 
 .lbox:target{
     opacity: 1;
-    visibility: visible;
+    display: block;
     width: 100%;
     height: 100%;
     top: 0;
@@ -88,3 +122,10 @@ ul{
     
 }
 
+footer{
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
