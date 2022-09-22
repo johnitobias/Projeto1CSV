@@ -6,10 +6,11 @@
 
 header{
     background-color: black;
-    color: #fff;
+    color: rgb(240, 238, 208);
     width: 100%;
     height: 40px;
     text-align: center;
+    z-index: 3;
 }
 .banner{
     width: 100%;
@@ -19,8 +20,9 @@ header{
 
 }
 main{
-    background-color: lightblue;
+    background-color: #fff;
     z-index: 2;
+    margin-bottom: 0;
 }
 
 .lbox{
@@ -30,11 +32,26 @@ main{
     
 }
 
+.min1 a img{ grid-area: a; }
+.min2 a img{ grid-area: b; }
+.min3 a img{ grid-area: c; }
+.min4 a img{ grid-area: d; }
+.min5 a img{ grid-area: e; }
+.min6 a img{ grid-area: f; }
+.min7 a img{ grid-area: g; }
+.min8 a img{ grid-area: h; }
+.min9 a img{ grid-area: i; }
+
 figure{
-    width: 880px;
-    list-style: none;
-    display: flex;
-    margin: 10px auto;
+    
+    display: grid;
+    grid-template-areas: 
+    'a b c d'
+    'a e c d'
+    'f g h i';
+    gap: 10px;
+    padding: 10px;
+    
 }
 .min{
     z-index: 4;
@@ -128,4 +145,7 @@ footer{
     width: 100%;
     height: 30px;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: 3;
 }
