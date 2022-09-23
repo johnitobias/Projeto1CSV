@@ -15,14 +15,15 @@ header{
 .banner{
     width: 100%;
     overflow: hidden;
-    z-index: -1;
-    
+    z-index: -2;
+   
 
 }
 main{
     background-color: #fff;
     z-index: 2;
     margin-bottom: 0;
+    
 }
 
 .lbox{
@@ -32,38 +33,49 @@ main{
     
 }
 
-.min1 a img{ grid-area: a; }
-.min2 a img{ grid-area: b; }
-.min3 a img{ grid-area: c; }
-.min4 a img{ grid-area: d; }
-.min5 a img{ grid-area: e; }
-.min6 a img{ grid-area: f; }
-.min7 a img{ grid-area: g; }
-.min8 a img{ grid-area: h; }
-.min9 a img{ grid-area: i; }
+#min1{ grid-area: a; }
+#min2{ grid-area: b; }
+#min3{ grid-area: c; }
+#min4{ grid-area: d; }
+#min5{ grid-area: e; }
+#min6{ grid-area: f; }
+#min7{ grid-area: g; }
+#min9{ grid-area: h; }
+#min9{ grid-area: i; }
+#min10{ grid-area: j; }
+#min11{ grid-area: k; }
+#min12{ grid-area: l; }
 
 figure{
     
     display: grid;
+    
     grid-template-areas: 
-    'a b c d'
-    'a e c d'
-    'f g h i';
-    gap: 10px;
+        'a a b c'
+        'a a d d'
+        'e f d d'
+        'g g h i'
+        'g g j k'
+        'l l l l';
+    gap: 20px;
     padding: 10px;
     
 }
+
+figure div{
+    overflow: hidden;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .4);
+}
+
 .min{
     z-index: 4;
     width: 100%;
-    padding: 15px;
+    
     overflow: hidden;
-    transition: all 0.3s;
+    transition:  0.5s;
     box-sizing: border-box;
     max-width: 100%;
-    min-width: 200px;
-    max-width: 300px;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, .4);
+    
 
 
 
@@ -71,7 +83,9 @@ figure{
 
 
 .min:hover{
-    transform: scale(1.05) rotate(5deg);
+    
+
+    transform:  scale(1.2) rotate(5deg);
     
     
 
